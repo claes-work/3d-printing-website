@@ -1,0 +1,17 @@
+{
+  "navigationBar": {
+    "buttons": {
+      "home": "Übersicht",
+      "services": "Leistungen",
+      "about": "Über mich",
+      "shop": "Shop",
+      "news": "News"
+    }
+  },
+  "homeView": {
+
+  },
+  "footer": {
+
+  }
+}

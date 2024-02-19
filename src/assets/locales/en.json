@@ -1,0 +1,17 @@
+{
+  "navigationBar": {
+    "buttons": {
+      "home": "Home",
+      "services": "Services",
+      "about": "About",
+      "shop": "Shop",
+      "news": "News"
+    }
+  },
+  "homeView": {
+
+  },
+  "footer": {
+
+  }
+}

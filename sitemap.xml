@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <!-- Home Page -->
+    <url>
+        <loc>https://www.example.com/</loc>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- Other Routes -->
+    <url>
+        <loc>https://www.example.com/about</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://www.example.com/shop</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Dynamic Routes (Assuming you have a dynamic route named 'product') -->
+    <!--<url>
+        <loc>https://www.example.com/products/product1</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>-->
+
+    <!-- Add more URLs for your specific routes -->
+
+</urlset>
