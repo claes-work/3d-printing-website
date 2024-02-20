@@ -18,15 +18,21 @@ import TwoColumnSection from "@/components/widgets/TwoColumnSection.vue";
   </BaseHeader>
   <TwoColumnSection>
     <template #left-column>
-      <h2>Das bin ich</h2>
+      <h2>Take a look at the results we had achieved</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipiscing elit facilisi et orci sit leo ut id enim risus amet leo in aut non egestas phasellus vitae pulvinar sit netus justo mauris socis interdum cras amet lorem at accumsan malesuada diam elementum venenatis tristique mauris sit amet enim purus sed.
+
+        Lorem ipsum dolor sit amet consectetur adipiscing elit libero eu laoreet felis sit. Platea faucibus neque at elit amet maecenas quis pretium</p>
     </template>
     <template #right-column>
-      <h2>Das bin ich</h2>
+
     </template>
   </TwoColumnSection>
   <FooterSection />
   <CopyrightSection />
 </template>
 
-<style>
+<style scoped>
+h2 {
+  text-align: left;
+}
 </style>
