@@ -102,7 +102,7 @@ const isActive: Ref<boolean> = ref(false)
   }
 
   .accordion-item-content {
-    padding-left: 43px;
+    padding-left: 35px;
   }
 }
 </style>
