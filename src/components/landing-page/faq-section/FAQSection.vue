@@ -48,9 +48,6 @@ import AccordionItem from "@/components/widgets/accordion/AccordionItem.vue";
 
 h2 {
   color: var(--primary-text-color-light);
-}
-
-h2 {
   margin-bottom: 30px;
 }
 

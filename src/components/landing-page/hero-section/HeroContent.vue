@@ -1,10 +1,23 @@
-<script setup>
-import ButtonWrapper from "@/components/landing-page/hero-section/ButtonWrapper.vue";
+<script setup lang="ts">
+import ButtonWrapper from "@/components/widgets/ButtonWrapper.vue";
 import ScrollArrowIcon from "@/components/icons/ScrollArrowIcon.vue";
 import {IconDirectionEnum} from "@/models/enums/IconDirectionEnum.ts";
 import {useScroll} from "@/composables/UseScroll";
+import type {IButton} from "@/models/interfaces/IButton";
 
 const { scrollToSection } = useScroll()
+
+const primaryBtn: IButton = {
+  title: 'Alle Produkte',
+  href: '#',
+  target: '_blank'
+}
+
+const secondaryBtn: IButton = {
+  title: 'Modellierungsarbeit',
+  href: 'tel:+4917661475965',
+  target: ''
+}
 </script>
 
 <template>
@@ -12,7 +25,10 @@ const { scrollToSection } = useScroll()
     <h1 v-if="false">Private 3D-Druck- & Modellierungsdienste</h1>
     <h1>Ihr 3D-Druck Experte in<br>Jüterbog</h1>
     <p class="subtitle">Willkommen! Mein Name ist Sebastian und ich bin Ihr Ansprechpartner für maßgeschneiderte 3D-Drucke. Gerne möchte ich Ihnen helfen Ihre Projekte zu verwirklichen, mit Liebe zum Detail und technischer Expertise.</p>
-    <ButtonWrapper />
+    <ButtonWrapper
+      :primary-btn="primaryBtn"
+      :secondary-btn="secondaryBtn"
+    />
     <a @click="scrollToSection('service-section')" class="scroll-wrapper">
       <ScrollArrowIcon fill="var(--green-yellow)" :direction="IconDirectionEnum.RIGHT" />
     </a>
@@ -56,8 +72,6 @@ p {
   p {
     margin-bottom: 46px;
   }
-
-
 }
 
 @keyframes jump {

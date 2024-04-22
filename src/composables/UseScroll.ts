@@ -1,9 +1,17 @@
 import {useMainStore} from "@/stores/MainStore";
+import {useRoute, useRouter} from "vue-router";
 
 export function useScroll() {
 
     const mainStore = useMainStore()
-    function scrollToSection(sectionId: string): void {
+    const route = useRoute()
+    const router = useRouter()
+
+    async function scrollToSection(sectionId: string): Promise<void> {
+        if (route.name !== 'home') {
+            await router.push({name: 'home'})
+        }
+
         const section = document.getElementById(sectionId);
         if (section) {
             window.scrollTo({

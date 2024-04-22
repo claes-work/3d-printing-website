@@ -1,11 +1,23 @@
 <script setup lang="ts">
+import type {PropType} from "vue";
+import type {IButton} from "@/models/interfaces/IButton";
 
+defineProps({
+  primaryBtn: {
+    type: Object as PropType<IButton>,
+    required: true
+  },
+  secondaryBtn: {
+    type: Object as PropType<IButton>,
+    required: true
+  }
+})
 </script>
 
 <template>
   <div class="button-wrapper">
-    <RouterLink :to="{ name: 'shop'}" class="primary-btn">Alle Produkte</RouterLink>
-    <button class="secondary-btn">Modellierungsarbeit</button>
+    <a :href="primaryBtn.href" :target="primaryBtn.target" class="primary-btn">{{ primaryBtn.title }}</a>
+    <a :href="secondaryBtn.href" :target="secondaryBtn.target" class="secondary-btn">{{ secondaryBtn.title }}</a>
   </div>
 </template>
 
