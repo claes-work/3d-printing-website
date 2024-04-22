@@ -11,7 +11,7 @@ import ServiceCard from "@/components/landing-page/ServiceSection/ServiceCard.vu
             title="3D-Druck Beratung"
             text="Sie haben Fragen zur Machbarkeit eines Projekts, Materialauswahl oder möchten mehr über die verschiedenen 3D-Druck Fertigungsverfahren erfahren? Holen Sie sich jetzt eine umfangreiche Expertenberatung ein! Gemeinsam gehen wir Ihr Vorhaben durch und klären alle Ihre Fragen."
             link-text="Jetzt beraten lassen"
-            link-route="more"
+            link-route="tel:+4917661475965"
         >
           <template #icon>
             <img
@@ -26,7 +26,7 @@ import ServiceCard from "@/components/landing-page/ServiceSection/ServiceCard.vu
             title="3D Modellierung"
             text="Professionelle 3D Modellierung für jedes Vorhaben. Ob Produktentwicklung, Architekturvisualisierung oder individuelle Projekte - ich bringe Ihre Visionen zum Leben. Profitieren Sie von meiner Erfahrung und starten Sie noch heute Ihr 3D-Modellierungsprojekt!"
             link-text="Mehr erfahren"
-            link-route="more"
+            link-route="tel:+4917661475965"
         >
           <template #icon>
             <img
@@ -41,7 +41,7 @@ import ServiceCard from "@/components/landing-page/ServiceSection/ServiceCard.vu
             title="3D Produkt Katalog"
             text="Entdecken Sie meine beeindruckende 3D-Druck Produktpalette! Von maßgeschneiderten Prototypen bis hin zu Spielzeug und kreativen Designs bieten wir eine vielfältige Auswahl. Lassen Sie sich von innovativen 3D-Drucklösungen inspirieren."
             link-text="Produkte ansehen"
-            link-route="more"
+            link-route="#"
         >
           <template #icon>
             <img

@@ -18,20 +18,24 @@ const props = defineProps({
   linkRoute: {
     type: String,
     required: true
+  },
+  linkTarget: {
+    type: String,
+    default: ''
   }
 })
 </script>
 
 <template>
-  <div class="card">
+  <a class="card" :href="linkRoute" :target="linkTarget">
     <h3>{{ title }}</h3>
     <p>{{ text }}</p>
     <slot name="icon"></slot>
-    <a>
+    <span class="link">
       {{ linkText }}
       <ButtonArrow :direction="IconDirectionEnum.RIGHT" />
-    </a>
-  </div>
+    </span>
+  </a>
 </template>
 
 <style scoped>
@@ -52,7 +56,7 @@ const props = defineProps({
   font-size: 16px;
 }
 
-a {
+.link {
   position: absolute;
   bottom: 48px;
   left: 24px;
@@ -61,11 +65,11 @@ a {
   color: var(--main-color);
 }
 
-a svg {
+.link svg {
   stroke-width: 2px;
 }
 
-a svg {
+.link svg {
   width: 15px;
   height: 12px;
   stroke: var(--main-color);
@@ -74,7 +78,7 @@ a svg {
 
 .card:hover h3,
 .card:hover p,
-.card:hover a,
+.card:hover .link,
 .card:hover svg {
   color: var(--primary-text-color-light);
   stroke: var(--primary-text-color-light);
