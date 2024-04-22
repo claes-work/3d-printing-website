@@ -64,6 +64,7 @@ const router = createRouter({
 router.afterEach(() => {
   const mainStore = useMainStore()
   mainStore.showMobileMenu = false
+  window.scrollTo(0, 0);
 })
 
 export default router

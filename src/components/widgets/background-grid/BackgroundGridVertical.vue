@@ -11,7 +11,7 @@ import HeroStar from "@/components/icons/HeroStar.vue";
       </div>
     </div>
     <div class="vertical-line">
-      <div class="hero-star left">
+      <div class="hero-star left top">
         <HeroStar />
       </div>
     </div>
@@ -62,6 +62,11 @@ import HeroStar from "@/components/icons/HeroStar.vue";
 
 .hero-star.left {
   top: 314px;
+  left: -48px;
+}
+
+.hero-star.left.top {
+  top: 11px;
   left: -48px;
 }
 
