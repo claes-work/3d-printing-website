@@ -12,5 +12,6 @@
 .blue-section {
   background-image: linear-gradient(130deg, var(--main-color), #244DD8);
   border-radius: 65px;
+  z-index: 10;
 }
 </style>

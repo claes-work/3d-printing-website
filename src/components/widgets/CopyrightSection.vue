@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import CaretRightIcon from "@/components/icons/CaretIcon.vue";
 import {IconDirectionEnum} from "@/models/enums/IconDirectionEnum";
+import {RouterLink} from "vue-router";
 </script>
 
 <template>
@@ -8,17 +9,17 @@ import {IconDirectionEnum} from "@/models/enums/IconDirectionEnum";
     <div class="container">
       <p>Copyright © 2024 3d-druck-jueterbog.de, Alle Rechte vorbehalten. Entwickelt von Sebastian Claes.</p>
       <ul>
-        <li>
+        <li v-if="false">
           <CaretRightIcon fill="var(--green-yellow)" :direction="IconDirectionEnum.RIGHT" />
           <a href="#">Nutzungsbedingungen</a>
         </li>
         <li>
           <CaretRightIcon fill="var(--green-yellow)" :direction="IconDirectionEnum.RIGHT" />
-          <a href="#">Datenschutzerklärung</a>
+          <RouterLink :to="{name: 'dsgvo'}">Datenschutzerklärung</RouterLink>
         </li>
         <li>
           <CaretRightIcon fill="var(--green-yellow)" :direction="IconDirectionEnum.RIGHT" />
-          <a href="#">Impressum</a>
+          <RouterLink :to="{name: 'imprint'}">Impressum</RouterLink>
         </li>
       </ul>
     </div>

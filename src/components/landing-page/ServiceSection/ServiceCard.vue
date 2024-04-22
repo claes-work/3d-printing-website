@@ -41,6 +41,7 @@ const props = defineProps({
   padding: 48px 24px;
   background-image: linear-gradient(to bottom, #EFF2F6 45%, rgba(255, 255, 255, 0));
   border-radius: 16px;
+  cursor: pointer;
 }
 
 .card:hover {

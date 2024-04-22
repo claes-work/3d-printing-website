@@ -3,6 +3,7 @@ import CaretRightIcon from "@/components/icons/CaretIcon.vue";
 import PhoneIcon from "@/components/icons/PhoneIcon.vue";
 import EmailIcon from "@/components/icons/EmailIcon.vue";
 import {IconDirectionEnum} from "@/models/enums/IconDirectionEnum";
+import {RouterLink} from "vue-router";
 </script>
 
 <template>
@@ -18,7 +19,7 @@ import {IconDirectionEnum} from "@/models/enums/IconDirectionEnum";
       <div class="link-column">
         <h4>Hilfreiche Links</h4>
         <ul>
-          <li>
+          <li v-if="false">
             <CaretRightIcon fill="var(--green-yellow)" :direction="IconDirectionEnum.RIGHT" />
             <a href="#">3D-Druck Verfahren</a>
           </li>
@@ -27,6 +28,14 @@ import {IconDirectionEnum} from "@/models/enums/IconDirectionEnum";
             <a href="#">Materialauswahl</a>
           </li>
           <li>
+            <CaretRightIcon fill="var(--green-yellow)" :direction="IconDirectionEnum.RIGHT" />
+            <RouterLink :to="{name: 'imprint'}">Impressum</RouterLink>
+          </li>
+          <li>
+            <CaretRightIcon fill="var(--green-yellow)" :direction="IconDirectionEnum.RIGHT" />
+            <RouterLink :to="{name: 'dsgvo'}">Datenschutzerklärung</RouterLink>
+          </li>
+          <li v-if="false">
             <CaretRightIcon fill="var(--green-yellow)" :direction="IconDirectionEnum.RIGHT" />
             <a href="#">Geschäftskunden</a>
           </li>

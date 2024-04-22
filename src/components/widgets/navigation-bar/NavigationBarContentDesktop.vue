@@ -1,9 +1,11 @@
 <script setup lang="ts">
 import {useRoute} from "vue-router";
-import {useMainStore} from "@/stores/MainStore";
+import {useScroll} from "@/composables/UseScroll";
+import {RouterLink} from "vue-router";
 
-const mainStore = useMainStore()
 const route = useRoute()
+const {scrollToSection} = useScroll()
+
 function checkActiveRoute(routeName: string): boolean {
   return route.name === routeName
 }
@@ -16,20 +18,22 @@ function checkActiveRoute(routeName: string): boolean {
         <RouterLink :to="{ name: 'home' }">Übersicht</RouterLink>
       </li>
       <li :class="{ active: checkActiveRoute('services') }">
-        <RouterLink :to="{ name: 'services' }">Leistungen</RouterLink>
+        <a @click="scrollToSection('service-section')">Leistungen</a>
       </li>
       <li :class="{ active: checkActiveRoute('about') }">
         <RouterLink :to="{ name: 'about' }">Über mich</RouterLink>
       </li>
-      <li :class="{ active: checkActiveRoute('shop') }">
+      <li v-if="false" :class="{ active: checkActiveRoute('shop') }">
         <RouterLink :to="{ name: 'shop' }">Shop</RouterLink>
       </li>
-      <li :class="{ active: checkActiveRoute('news') }">
+      <li v-if="false" :class="{ active: checkActiveRoute('news') }">
         <RouterLink :to="{ name: 'news' }">News</RouterLink>
       </li>
     </ul>
   </nav>
-  <a href="tel:+4917661475965"><button class="tertiary-btn">Kontak Aufnehmen</button></a>
+  <a href="tel:+4917661475965">
+    <button class="tertiary-btn">Kontak Aufnehmen</button>
+  </a>
 </template>
 
 <style scoped>

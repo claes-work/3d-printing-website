@@ -2,6 +2,9 @@
 import ButtonWrapper from "@/components/landing-page/hero-section/ButtonWrapper.vue";
 import ScrollArrowIcon from "@/components/icons/ScrollArrowIcon.vue";
 import {IconDirectionEnum} from "@/models/enums/IconDirectionEnum.ts";
+import {useScroll} from "@/composables/UseScroll";
+
+const { scrollToSection } = useScroll()
 </script>
 
 <template>
@@ -10,9 +13,9 @@ import {IconDirectionEnum} from "@/models/enums/IconDirectionEnum.ts";
     <h1>Ihr 3D-Druck Experte in<br>Jüterbog</h1>
     <p class="subtitle">Willkommen! Mein Name ist Sebastian und ich bin Ihr Ansprechpartner für maßgeschneiderte 3D-Drucke. Gerne möchte ich Ihnen helfen Ihre Projekte zu verwirklichen, mit Liebe zum Detail und technischer Expertise.</p>
     <ButtonWrapper />
-    <div class="scroll-wrapper">
+    <a @click="scrollToSection('service-section')" class="scroll-wrapper">
       <ScrollArrowIcon fill="var(--green-yellow)" :direction="IconDirectionEnum.RIGHT" />
-    </div>
+    </a>
   </div>
 </template>
 

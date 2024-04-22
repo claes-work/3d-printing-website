@@ -1,10 +1,10 @@
 <template>
   <section class="two-column-section">
     <div class="container">
-      <div class="column">
+      <div class="column left">
         <slot name="left-column"></slot>
       </div>
-      <div class="column">
+      <div class="column right">
         <slot name="right-column"></slot>
       </div>
     </div>

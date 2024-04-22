@@ -4,7 +4,7 @@
 
 <template>
   <div class="shop-header-content">
-    <h1>Über mich</h1>
+    <h1>Herzlich willkommen bei 3D EXPERT</h1>
   </div>
 </template>
 
