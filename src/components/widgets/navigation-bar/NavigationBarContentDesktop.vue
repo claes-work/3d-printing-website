@@ -29,10 +29,13 @@ function checkActiveRoute(routeName: string): boolean {
       <li v-if="false" :class="{ active: checkActiveRoute('news') }">
         <RouterLink :to="{ name: 'news' }">News</RouterLink>
       </li>
+      <li :class="{ active: checkActiveRoute('imprint') }">
+        <RouterLink :to="{ name: 'imprint' }">Kontakt</RouterLink>
+      </li>
     </ul>
   </nav>
   <a href="tel:+4917661475965">
-    <button class="tertiary-btn">Kontak Aufnehmen</button>
+    <button class="tertiary-btn">Jetzt Anrufen</button>
   </a>
 </template>
 
