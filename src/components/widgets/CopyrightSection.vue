@@ -7,7 +7,7 @@ import {RouterLink} from "vue-router";
 <template>
   <section id="copyright">
     <div class="container">
-      <p>Copyright © 2024 3d-druck-jueterbog.de, Alle Rechte vorbehalten. Entwickelt von Sebastian Claes.</p>
+      <p>Copyright © 2024 3d-druck-jueterbog.de, Alle Rechte vorbehalten. Entwickelt von <a href="https://portfolio.claes-work.de/" target="_blank">Sebastian Claes</a>.</p>
       <ul>
         <li v-if="false">
           <CaretRightIcon fill="var(--green-yellow)" :direction="IconDirectionEnum.RIGHT" />
@@ -53,6 +53,11 @@ p, a {
   font-size: 11px;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
+}
+
+a {
+  color: var(--green-yellow);
+  text-decoration: underline;
 }
 
 ul {
