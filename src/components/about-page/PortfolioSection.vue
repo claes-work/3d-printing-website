@@ -8,7 +8,7 @@
       <h2>Mehr zu meiner Person</h2>
       <p>Sie wollen mehr zu mir und meiner hauptberuflichen Tätigkeit als Softwareentwickler erfahren? Dann schauen Sie
         doch gerne auf meiner privaten Portfolio Webseite vorbei.</p>
-      <a href="">
+      <a href="https://portfolio.claes-work.de/" target="_blank">
         <button class="primary-btn">Portfolio Webseite</button>
       </a>
     </div>
