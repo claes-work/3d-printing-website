@@ -8,9 +8,9 @@ import type {IButton} from "@/models/interfaces/IButton";
 const { scrollToSection } = useScroll()
 
 const primaryBtn: IButton = {
-  title: 'Alle Produkte',
-  href: '#',
-  target: '_blank'
+  title: 'Mehr zu mir',
+  href: '/about',
+  target: ''
 }
 
 const secondaryBtn: IButton = {
@@ -22,7 +22,6 @@ const secondaryBtn: IButton = {
 
 <template>
   <div class="hero-content">
-    <h1 v-if="false">Private 3D-Druck- & Modellierungsdienste</h1>
     <h1>Ihr 3D-Druck Experte in<br>Jüterbog</h1>
     <p class="subtitle">Willkommen! Mein Name ist Sebastian und ich bin Ihr Ansprechpartner für maßgeschneiderte 3D-Drucke. Gerne möchte ich Ihnen helfen Ihre Projekte zu verwirklichen, mit Liebe zum Detail und technischer Expertise.</p>
     <ButtonWrapper
