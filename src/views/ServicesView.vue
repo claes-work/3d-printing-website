@@ -7,7 +7,7 @@ import BaseHeader from "@/components/widgets/BaseHeader.vue";
 </script>
 
 <template>
-  <BannerWrapper v-show="true" />
+  <BannerWrapper v-show="false" />
   <NavigationBar />
   <BaseHeader>
     <template #content>

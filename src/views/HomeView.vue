@@ -11,7 +11,7 @@ import BannerWrapper from "@/components/widgets/banner/BannerWrapper.vue";
 </script>
 
 <template>
-  <BannerWrapper v-show="true" />
+  <BannerWrapper v-show="false" />
   <NavigationBar />
   <HeroSection />
   <ServiceSection />

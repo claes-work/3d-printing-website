@@ -37,7 +37,7 @@ const leaveDetailView = () => router.push({ name: 'shop' })
 </script>
 
 <template>
-  <NewsBanner />
+  <NewsBanner v-show="false" />
   <NavigationBar/>
   <ShopDetailHeader :product="product" />
   <FooterSection />

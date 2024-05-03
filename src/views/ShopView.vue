@@ -12,7 +12,7 @@ const shopStore = useShopStore()
 </script>
 
 <template>
-  <BannerWrapper v-show="true" />
+  <BannerWrapper v-show="false" />
   <NavigationBar/>
   <ShopHeader />
   <section id="shop-content">

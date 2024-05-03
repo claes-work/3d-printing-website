@@ -11,7 +11,7 @@ import ContactSection from "@/components/about-page/ContactSection.vue";
 </script>
 
 <template>
-  <BannerWrapper v-show="true" />
+  <BannerWrapper v-show="false" />
   <NavigationBar />
   <MissionSection />
   <BlueSection id="personal-section">

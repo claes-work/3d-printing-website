@@ -6,7 +6,7 @@ import NavigationBar from "@/components/widgets/navigation-bar/NavigationBar.vue
 </script>
 
 <template>
-  <NewsBanner />
+  <NewsBanner v-show="false" />
   <NavigationBar/>
   <FooterSection />
   <CopyrightSection/>

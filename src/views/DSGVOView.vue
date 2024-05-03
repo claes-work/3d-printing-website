@@ -8,7 +8,7 @@ import DSGVOText from "@/components/dsgvo/DSGVOText.vue";
 </script>
 
 <template>
-  <BannerWrapper v-show="true" />
+  <BannerWrapper v-show="false" />
   <NavigationBar />
   <BaseHeader>
     <template #content>

@@ -11,7 +11,7 @@ import ContactSection from "@/components/about-page/ContactSection.vue";
 
 <template>
   <div id="imprint">
-    <BannerWrapper v-show="true"/>
+    <BannerWrapper v-show="false"/>
     <NavigationBar/>
     <BaseHeader id="imprint-header">
       <template #content>
