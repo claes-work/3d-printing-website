@@ -19,7 +19,7 @@ import ContactSection from "@/components/about-page/ContactSection.vue";
       <PersonalSection />
     </template>
   </BlueSection>
-  <PortfolioSection />
+  <PortfolioSection v-if="false" />
   <ContactSection />
   <FooterSection />
   <CopyrightSection />
@@ -29,6 +29,12 @@ import ContactSection from "@/components/about-page/ContactSection.vue";
 #personal-section {
   overflow: hidden;
   padding-bottom: 0;
+}
+
+/* TODO: temp since portfolio website is not available */
+.blue-section {
+  border-radius: 65px 65px 0 0;
+  margin-bottom: -65px;
 }
 
 @media only screen and (min-width: 991px) {
